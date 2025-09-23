@@ -83,6 +83,7 @@ However, we generally observe that random shuffling is robust and contributes po
 
 # Prompt Template
 
+![image info](./figures/prompt_template.jpg)
 *Note: The referenced figure (icl_template) would need to be converted separately from the LaTeX input file.*
 
 The template shows the format for including the list-wise examples. The sample output labeled as `Example ordering` refers to an ordering - a permutation map of the input - found by maximizing a given objective related to the distribution of the metadata values of each document of the input list ⟨D₁,...,Dₖ⟩ retrieved for the query Q which is similar to Qc (the current input query). This permutation of a set of input documents retrieved for a similar query is the only mechanism to `control` the output ranking for the query Qc.
