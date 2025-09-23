@@ -4,7 +4,14 @@
 
 The fairness task corresponds to that of the `single ranking` task of TREC Fairness track on the `eval` query set. The objective in the Touche task is to mitigate the bias towards a specific stance, whereas the objective in the ad-hoc search task on TREC DL topics is to maximize the topical diversity, where each topic maps to a cluster of documents. We illustrate the details of our chosen collections in Table below.
 
-*Note: The referenced table (dataset_desc) would need to be converted from the LaTeX file.*
+#### Statistics of the datasets used in our experiments
+
+| Task | Collection | \|𝒞\| | Queries | \|𝒬\| | Name | Values |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| Fairness | TREC Fair | 6.5 M | Fair-2022 | 50 | Gender | M, F |
+| Fairness | ToucheV2 | 383 K | Touche'20 | 49 | Stance | PRO, CON |
+| Diversity | MS MARCO | 8.8 M | DL'19 | 43 | Topic | ℤ |
+| Diversity | MS MARCO | 8.8 M | DL'20 | 54 | Topic | ℤ |
 
 ## Clustering for Diversity
 
