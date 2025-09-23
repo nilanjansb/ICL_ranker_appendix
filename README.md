@@ -123,8 +123,6 @@ Llama-8B results show that our approach works even for small models, but with li
 
 # Example Ordering
 
-*Note: The referenced tables (results_iclr) would need to be converted separately from the LaTeX input files.*
-
 We initially adopted random ordering for in-context examples due to its simplicity and computational efficiency. However, prior work highlights that the ordering of both examples and test documents can critically influence model behavior, introducing instability or performance degradation in tasks like ranking and generation. To systematically evaluate this risk, we complement random ordering with examples ordered by first-stage ranker scores (e.g., BM25 or ColBERT relevance scores).
 
 This dual approach tests whether example ordering impacts model outputs analogously to test document ordering—specifically, whether ordered examples provide clearer task conditioning while random ordering acts as a regularizer. By comparing these configurations, we isolate the effect of document ordering on the model's ability to balance relevance and auxiliary objectives.
@@ -132,6 +130,25 @@ This dual approach tests whether example ordering impacts model outputs analogou
 We observe how a randomly shuffled initial ordering of ICL examples compares to the ordering by the first stage. Intuitively, one can assume that demonstrations should closely match the exact setting in which the model is used. Our results demonstrate that stage-one ordering enhances nDCG but adversely impacts the auxiliary objective performance.
 
 However, we generally observe that random shuffling is robust and contributes positively to the auxiliary objectives. We attribute this to the fact that random ordering mitigates bias and enables the system to generalize effectively across diverse objectives while also enhancing the adaptability of our approach. While document order is a key factor in the robustness of supervised list-wise re-rankers, this appears to have a reduced negative effect on exemplar-based zero-shot list-wise ranking. With likely improvements of supervised rankers in the future, these same improvements may bolster the effectiveness of in-context learning methods.
+
+#### Evaluating the Effect of Initial and First-Stage Ordering on TREC DL-2019 and 2020
+
+| Pipeline | Example Ordering | TREC DL-2019 nDCG | TREC DL-2019 α-nDCG | TREC DL-2020 nDCG | TREC DL-2020 α-nDCG |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| BM25 + Diverse | Random | 0.7124 | **0.7135** | **0.6844** | **0.7228** |
+|  | BM25 | **0.7216** | 0.6882 | 0.6823 | 0.6999 |
+| ColBERT + Diverse | Random | 0.7601 | 0.6891 | **0.7700** | **0.7132** |
+|  | ColBERT | **0.7784** | **0.6991** | 0.7670 | 0.7074 |
+
+
+#### Evaluating the Effect of Initial and First-Stage Ordering on Touche and Fair-2022
+
+| Pipeline | Ordering | Touche-2020 nDCG | AWRF | M1 | Fair-2022 nDCG | AWRF | M1 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| BM25 + Fair | Random | 0.2608 | **0.5800** | 0.2023 | 0.5697 | **0.5697** | 0.3526 |
+|  | BM25 | **0.2856** | 0.5410 | **0.2180** | **0.6029** | 0.5692 | **0.4013** |
+| ColBERT + Fair | Random | **0.2508** | **0.2602** | **0.1216** | **0.6606** | **0.2272** | **0.1628** |
+|  | ColBERT | 0.2444 | 0.2028 | 0.1010 | 0.6554 | 0.2260 | 0.1593 |
 
 # Prompt Template
 [<img alt="alt_text" width="500px" src="./figures/prompt_template.jpg" />]
