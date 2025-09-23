@@ -82,8 +82,8 @@ We observe how a randomly shuffled initial ordering of ICL examples compares to 
 However, we generally observe that random shuffling is robust and contributes positively to the auxiliary objectives. We attribute this to the fact that random ordering mitigates bias and enables the system to generalize effectively across diverse objectives while also enhancing the adaptability of our approach. While document order is a key factor in the robustness of supervised list-wise re-rankers, this appears to have a reduced negative effect on exemplar-based zero-shot list-wise ranking. With likely improvements of supervised rankers in the future, these same improvements may bolster the effectiveness of in-context learning methods.
 
 # Prompt Template
-[<img alt="alt_text" width="40px" src="./figures/prompt_template.jpg" />]
-![image info](./figures/prompt_template.jpg)
+[<img alt="alt_text" width="500px" src="./figures/prompt_template.jpg" />]
+
 *Note: The referenced figure (icl_template) would need to be converted separately from the LaTeX input file.*
 
 The template shows the format for including the list-wise examples. The sample output labeled as `Example ordering` refers to an ordering - a permutation map of the input - found by maximizing a given objective related to the distribution of the metadata values of each document of the input list ⟨D₁,...,Dₖ⟩ retrieved for the query Q which is similar to Qc (the current input query). This permutation of a set of input documents retrieved for a similar query is the only mechanism to `control` the output ranking for the query Qc.
