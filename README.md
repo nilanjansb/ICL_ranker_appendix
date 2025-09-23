@@ -82,7 +82,7 @@ We observe how a randomly shuffled initial ordering of ICL examples compares to 
 However, we generally observe that random shuffling is robust and contributes positively to the auxiliary objectives. We attribute this to the fact that random ordering mitigates bias and enables the system to generalize effectively across diverse objectives while also enhancing the adaptability of our approach. While document order is a key factor in the robustness of supervised list-wise re-rankers, this appears to have a reduced negative effect on exemplar-based zero-shot list-wise ranking. With likely improvements of supervised rankers in the future, these same improvements may bolster the effectiveness of in-context learning methods.
 
 # Prompt Template
-
+[<img alt="alt_text" width="40px" src="./figures/prompt_template.jpg" />]
 ![image info](./figures/prompt_template.jpg)
 *Note: The referenced figure (icl_template) would need to be converted separately from the LaTeX input file.*
 
