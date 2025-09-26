@@ -164,6 +164,6 @@ reranking.*
 
 *An example showing five localized queries that are retrieved for a test query in each test collection.*
 
-[<img alt="alt_text" width="500px" src="./figures/localized_queries.jpg" />]
+<img alt="alt_text" width="500px" src="./figures/localized_queries.jpg" />
 
 Using BM25, we retrieve five queries for each test query from the MS MARCO train query set. These similar queries are used as the query for ICL examples. Sample examples of such similar queries for each test are shown in the referenced figure.
