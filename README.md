@@ -23,17 +23,9 @@ Following previous work, we retrieve similar queries from the MSMARCO training s
 
 ### Sample Test Query from Touche Dataset
 
-**Query:** Should teachers get tenure?
-
-**Ranking Task:** Rank the passages based on their relevance to query:
-
-- **** ... tenure is needed to **protect academic freedom** (CON) ...
-- **** ... without tenure **teachers may be fired** (CON)
-- **** ... it is **difficult to remove under-performing teachers** (PRO)
-
-**Instructions:** Rank the 3 passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [ ] > [ ], e.g.,  > .
-
 *The figure shows a sample input query from the Touche dataset. The ICL example of a related query from MS MARCO and its example output (balancing both relevance and pro:con parity) is used to control the current query's reranking.*
+
+<img alt="alt_text" width="500px" src="./figures/sample_touche.jpg" />
 
 ## LLM Configurations
 
