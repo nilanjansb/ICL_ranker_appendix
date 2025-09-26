@@ -152,13 +152,13 @@ However, we generally observe that random shuffling is robust and contributes po
 
 # Prompt Template
 *The prompt template used in our work is shown, which allows provision to include a target ranking for a similar query. *
-[<img alt="alt_text" width="500px" src="./figures/prompt_template.jpg" />]
+<img alt="alt_text" width="500px" src="./figures/prompt_template.jpg" />
 
 The template shows the format for including the list-wise examples. The sample output labeled as `Example ordering` refers to an ordering - a permutation map of the input - found by maximizing a given objective related to the distribution of the metadata values of each document of the input list ⟨D₁,...,Dₖ⟩ retrieved for the query Q which is similar to Qc (the current input query). This permutation of a set of input documents retrieved for a similar query is the only mechanism to `control` the output ranking for the query Qc.
 
 *The figure shows a sample input query from the Touche dataset. The ICL example of a related query from MS MARCO and its example output (balancing both relevance and pro:con parity, as shown in Figure 2) is used to control the current query’s
 reranking.*
-[<img alt="alt_text" width="500px" src="./figures/icl_example.jpg" />]
+<img alt="alt_text" width="500px" src="./figures/icl_example.jpg" />
 
 # Localized Queries used for ICL Examples
 
