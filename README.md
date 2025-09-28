@@ -137,7 +137,8 @@ However, we generally observe that random shuffling is robust and contributes po
 |  | ColBERT | 0.2444 | 0.2028 | 0.1010 | 0.6554 | 0.2260 | 0.1593 |
 
 # Prompt Template
-*The prompt template used in our work is shown, which allows provision to include a target ranking for a similar query. *
+
+Figure 1: The prompt template used in our work is shown, which allows provision to include a target ranking for a similar query.
 
 <img alt="alt_text" width="500px" src="./figures/prompt_template.jpg" />
 
