@@ -155,6 +155,7 @@ Using BM25, we retrieve five queries for each test query from the MS MARCO train
 
 Figure 3: An example showing five localized queries that are retrieved for a test query in each test collection.
 
+<a href="./figures/localized_queries.jpg"> Click here to see figure. </a>
 <img alt="alt_text" width="500px" src="./figures/localized_queries.jpg" />
 
 
