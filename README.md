@@ -152,7 +152,7 @@ reranking.*
 
 <a href="https://anonymous.4open.science/r/ICL_ranker_appendix-0C6A/figures/icl_example.jpg"> Click here to see figure. </a>
 
-<img alt="alt_text" width="500px" src="[./figures/icl_example.jpg](https://anonymous.4open.science/r/ICL_ranker_appendix-0C6A/figures/icl_example.jpg)" />
+<img alt="alt_text" width="500px" src="https://anonymous.4open.science/r/ICL_ranker_appendix-0C6A/figures/icl_example.jpg" />
 <img alt="alt_text" width="500px" src="./figures/icl_example.jpg" />
 
 # Localized Queries used for ICL Examples
