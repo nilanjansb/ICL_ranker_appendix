@@ -150,9 +150,9 @@ The template shows the format for including the list-wise examples. The sample o
 Figure 2: The figure shows a sample input query from the Touche dataset. The ICL example of a related query from MS MARCO and its example output (balancing both relevance and pro:con parity, as shown in Figure 2) is used to control the current query’s
 reranking.*
 
-<a href="./figures/icl_example.jpg"> Click here to see figure. </a>
+<a href="https://anonymous.4open.science/r/ICL_ranker_appendix-0C6A/figures/icl_example.jpg"> Click here to see figure. </a>
 
-
+<img alt="alt_text" width="500px" src="[./figures/icl_example.jpg](https://anonymous.4open.science/r/ICL_ranker_appendix-0C6A/figures/icl_example.jpg)" />
 <img alt="alt_text" width="500px" src="./figures/icl_example.jpg" />
 
 # Localized Queries used for ICL Examples
